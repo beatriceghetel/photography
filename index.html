@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotograful tau din Iași | Momente Autentice</title>
+    <!-- Tailwind CSS for modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+    /* Replace with your absolute best nature or action shot */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('banner.jpg?auto=format&fit=crop&w=1920&q=80');
+    
+    /* Forces the image to scale and completely cover the container */
+    background-size: cover;
+    
+    /* Keeps the image perfectly centered as the screen size changes */
+    background-position: center;
+    
+    /* Optional: Prevents the image from repeating if the container is larger than the image */
+    background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body class="bg-zinc-900 text-zinc-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+			<a href="#" class="text-3xl font-light tracking-widest flex items-center select-none subpixel-antialiased">
+			<!-- B - Doar contur galben subțire, interior transparent -->
+  <!-- B - Galben, Subțire/Light -->
+    <span style="color: #f59e0b;">B</span>
+    
+    <div style="display: flex; align-items: flex-start; margin-left: 4px;">
+        <span style="color: #f59e0b;">G</span>
+        <span style="color: #a1a1aa; margin-left: -13px; margin-top: 0px;">G</span>
+    </div>
+    
+    <span style="color: #a1a1aa; margin-left: 4px;">HETEL</span>
+  
+  <span style="
+        font-weight: 300; 
+        color: #52525b; /* Gri mat, discret */
+        letter-spacing: 0.2em; 
+        text-transform: uppercase; 
+        margin-left: 16px; 
+        display: inline-block;
+    ">PHOTO</span>
+  
+</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#despre" class="hover:text-amber-500 transition">Despre Mine</a>
+                <a href="#portofoliu" class="hover:text-amber-500 transition">Portofoliu</a>
+                <a href="#servicii" class="hover:text-amber-500 transition">Servicii & Tarife</a>
+                <a href="#contact" class="bg-amber-500 text-zinc-950 px-4 py-2 rounded font-semibold hover:bg-amber-400 transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-zinc-400 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Stack -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-4 pt-2 pb-4 space-y-3">
+            <a href="#despre" onclick="toggleMobileMenu()" class="block text-zinc-300 hover:text-amber-500">Despre Mine</a>
+            <a href="#portofoliu" onclick="toggleMobileMenu()" class="block text-zinc-300 hover:text-amber-500">Portofoliu</a>
+            <a href="#servicii" onclick="toggleMobileMenu()" class="block text-zinc-300 hover:text-amber-500">Servicii & Tarife</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-amber-500 font-semibold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg bg-cover bg-center h-[85vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl">
+            <span class="text-amber-500 font-semibold tracking-widest uppercase text-sm block mb-3">Fotograf Evenimente & Lifestyle · Iași</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">Capturând energia pură și momentele autentice</h1>
+            <p class="text-lg md:text-xl text-zinc-300 mb-8 max-w-2xl mx-auto">De la adrenalina curselor cu obstacole, la emoția celor mai importante capitole din viața ta.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#portofoliu" class="bg-amber-500 text-zinc-950 px-8 py-3 rounded font-bold text-base hover:bg-amber-400 transition shadow-lg">Vezi Portofoliul</a>
+                <a href="#contact" class="border border-zinc-500 text-white px-8 py-3 rounded font-bold text-base hover:bg-white hover:text-zinc-950 transition">Rezervă o Ședință</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Context/Spin Section -->
+    <section id="despre" class="py-20 max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <!-- Replace with a great photo of yourself in action -->
+            <img src="profil.jpg" alt="Fotograf" class="rounded-lg shadow-2xl border border-zinc-800 grayscale hover:grayscale-0 transition duration-500">
+        </div>
+        <div>
+            <h2 class="text-3xl font-bold text-white mb-6">De la noroiul curselor, la momentele tale de colecție.</h2>
+            <p class="text-zinc-300 mb-4 leading-relaxed">
+                Pasiunea mea pentru fotografie nu s-a născut într-un studio steril, ci în mijlocul acțiunii. Dovadă stau cadrele dinamice surprinse ca voluntar la <strong class="text-white">Asaltul Lupilor Iași</strong> și energia brută de la <strong class="text-white">Hai cu Pluta</strong>.
+            </p>
+            <p class="text-zinc-300 mb-6 leading-relaxed">
+                Dacă pot îngheța în timp determinarea pură din ochii unui alergător plin de noroi sau hohotele sincere de râs de pe o plută improvizată, înseamnă că sunt mereu pregătit pentru neprevăzut. Nu regizez momente artificiale; vânez emoții reale.
+            </p>
+            <div class="flex gap-6 text-center">
+                <div>
+                    <span class="block text-2xl font-bold text-amber-500">100%</span>
+                    <span class="text-xs text-zinc-400 uppercase tracking-wider">Implicare</span>
+                </div>
+                <div class="border-l border-zinc-800 pl-6">
+                    <span class="block text-2xl font-bold text-amber-500">Action</span>
+                    <span class="text-xs text-zinc-400 uppercase tracking-wider">Ready Style</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portofoliu" class="py-25 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Portofoliu și Galerie</h2>
+                <p class="text-zinc-400">O selecție de cadre care spun o poveste fără cuvinte.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="events-documentary/events.html" class="group relative overflow-hidden rounded-lg bg-zinc-900 border border-zinc-800 block">
+                    <img src="events-documentary/DSC06811.jpg" alt="Evenimente și documentar" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Evenimente & Documentar</h3>
+                        <p class="text-sm text-zinc-400">Acțiune, energie și emoții reale surprinse în mijlocul momentului.</p>
+                    </div>
+                </a>
+
+                <a href="food-wine-artisan/food.html" class="group relative overflow-hidden rounded-lg bg-zinc-900 border border-zinc-800 block">
+                    <img src="food-wine-artisan/DSC05923.jpg" alt="Mâncare, vin și produse artizanale" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Mâncare, Vin & Artizanat</h3>
+                        <p class="text-sm text-zinc-400">Texturi, gusturi și detalii care dau personalitate fiecărui produs.</p>
+                    </div>
+                </a>
+
+                <a href="portraits-people/portraits.html" class="group relative overflow-hidden rounded-lg bg-zinc-900 border border-zinc-800 block">
+                    <img src="portraits-people/DSC05684.jpg" alt="Portrete și oameni" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Portrete & Oameni</h3>
+                        <p class="text-sm text-zinc-400">Chipuri, personalitate și conexiuni fotografiate natural.</p>
+                    </div>
+                </a>
+
+                <a href="nature-wildlife/nature.html" class="group relative overflow-hidden rounded-lg bg-zinc-900 border border-zinc-800 block">
+                    <img src="nature-wildlife/DSC06368.jpg" alt="Natură și viață sălbatică" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Natură & Viață Sălbatică</h3>
+                        <p class="text-sm text-zinc-400">Peisaje, animale și mici momente descoperite în aer liber.</p>
+                    </div>
+                </a>
+
+                <a href="travel-landscape-architecture/travel.html" class="group relative overflow-hidden rounded-lg bg-zinc-900 border border-zinc-800 block">
+                    <img src="travel-landscape-architecture/IMG-20210922-WA0029.jpg" alt="Călătorii, peisaje și arhitectură" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Călătorii, Peisaje & Arhitectură</h3>
+                        <p class="text-sm text-zinc-400">Locuri, forme și atmosferă adunate din drumurile de zi cu zi.</p>
+                    </div>
+                </a>
+
+                <a href="fine-art-abstract/art.html" class="group relative overflow-hidden rounded-lg bg-zinc-900 border border-zinc-800 block">
+                    <img src="fine-art-abstract/DSC06199.jpg" alt="Fotografie artistică și abstractă" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-2">Artă & Abstract</h3>
+                        <p class="text-sm text-zinc-400">Imagini experimentale, simboluri și perspective neobișnuite.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Promo Section -->
+    <section id="servicii" class="py-20 max-w-5xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white mb-4">Să construim amintiri împreună</h2>
+            <p class="text-zinc-400 max-w-xl mx-auto">Vrei să colaborăm? Deși mă extind spre evenimente de familie (nunți/botezuri), ofer pachete de lansare ultra-avantajoase pentru a-mi construi galeriile dedicate.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Box 1 -->
+            <div class="p-8 bg-zinc-900 rounded-lg border border-zinc-800 flex flex-col justify-between">
+                <div>
+                    <div class="text-amber-500 text-2xl mb-4"><i class="fa-solid fa-camera"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Ședințe Foto Lifestyle / Cununie</h3>
+                    <p class="text-zinc-400 text-sm mb-6">Ideale pentru cupluri, portrete individuale în natură sau cununii civile în Iași.</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-sm text-zinc-400">De la</span>
+                    <span class="text-2xl font-bold text-white">350 RON</span>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="p-8 bg-zinc-900 rounded-lg border-2 border-amber-500/50 flex flex-col justify-between relative">
+                <span class="absolute -top-3 right-4 bg-amber-500 text-zinc-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Oferă de Lansare</span>
+                <div>
+                    <div class="text-amber-500 text-2xl mb-4"><i class="fa-solid fa-ring"></i></div>
+                    <h3 class="text-xl font-bold text-white mb-2">Evenimente Mari (Nuntă / Botez)</h3>
+                    <p class="text-zinc-400 text-sm mb-6">Disponibil ca al doilea fotograf (Second Shooter) sau fotograf principal pentru primele mele 3 evenimente din acest sezon la tarife speciale.</p>
+                </div>
+                <div class="flex items-baseline gap-2">
+                    <span class="text-sm text-zinc-400">Preț special:</span>
+                    <span class="text-2xl font-bold text-amber-500">Contactează-mă</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-zinc-950 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-4">Hai să vorbim!</h2>
+                <p class="text-zinc-400 mb-8">Ai un proiect în minte, vrei o ședință foto relaxată sau ai nevoie de un fotograf dedicat pentru un eveniment în Iași? Lasă-mi un mesaj și îți răspund în maximum 24 de ore.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-zinc-900 rounded flex items-center justify-center text-amber-500"><i class="fa-solid fa-phone"></i></div>
+                        <span class="text-zinc-300">[Numărul Tău de Telefon]</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-zinc-900 rounded flex items-center justify-center text-amber-500"><i class="fa-solid fa-envelope"></i></div>
+                        <span class="text-zinc-300">contact@numefoto.ro</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-zinc-900 rounded flex items-center justify-center text-amber-500"><i class="fa-brands fa-whatsapp"></i></div>
+                        <span class="text-zinc-300">Disponibil pe WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Contact Form Formspree ready -->
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase font-semibold text-zinc-400 mb-2">Nume Complet</label>
+                    <input type="text" required class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-white focus:outline-none focus:border-amber-500 transition">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-semibold text-zinc-400 mb-2">Adresă de Email</label>
+                    <input type="email" required class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-white focus:outline-none focus:border-amber-500 transition">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-semibold text-zinc-400 mb-2">Tip Eveniment</label>
+                    <select class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-white focus:outline-none focus:border-amber-500 transition">
+                        <option>Ședință Foto Portret / Lifestyle</option>
+                        <option>Cununie Civilă</option>
+                        <option>Nuntă / Botez (Oferta de Lansare)</option>
+                        <option>Altceva / Solicitare Specială</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs uppercase font-semibold text-zinc-400 mb-2">Mesaj</label>
+                    <textarea rows="4" required class="w-full bg-zinc-900 border border-zinc-800 rounded p-3 text-white focus:outline-none focus:border-amber-500 transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 text-zinc-950 py-3 rounded font-bold hover:bg-amber-400 transition tracking-wide uppercase text-sm">Trimite Mesajul</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-zinc-600 bg-zinc-950 border-t border-zinc-900">
+        <p>&copy; 2026 NumeFoto. Toate drepturile rezervate. Creat cu <i class="fa-solid fa-heart text-amber-600"></i> în Iași.</p>
+    </footer>
+
+    <!-- Simple JS Mobile Menu Toggle -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
